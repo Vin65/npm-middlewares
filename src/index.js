@@ -1,6 +1,6 @@
 import 'babel-polyfill';
-import httpErrorHandler from './middlewares/httpErrorHandler';
-import httpResponseHandler from './middlewares/httpResponseHandler';
+const httpErrorHandler = require('./middlewares/httpErrorHandler');
+const httpResponseHandler = require('./middlewares/httpResponseHandler');
 
 export {
   httpErrorHandler,
