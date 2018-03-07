@@ -1,6 +1,9 @@
 # npm-middlewares
 A collection of middyJS custom middlewares for lambda functions
 
+# Installation
+* `npm install --save npm-middlewares`
+
 # Middlewares documentation
 
 ## Available middlewares
@@ -26,7 +29,7 @@ It should be set as the last error handler.
 
 ```javascript
 const middy = require('middy')
-const { httpErrorHandler } = require('middy/middlewares')
+const { httpErrorHandler } = require('npm-middlewares')
 
 const handler = middy((event, context, cb) => {
   throw new createError.UnprocessableEntity()
@@ -54,7 +57,7 @@ for them (using the object as the response body and a 200 status code).
 
 ```javascript
 const middy = require('middy')
-const { httpResponseHandler } = require('middy/middlewares')
+const { httpResponseHandler } = require('npm-middlewares')
 
 // When using an async/await syntax
 
